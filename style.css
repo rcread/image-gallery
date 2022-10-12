@@ -1,0 +1,104 @@
+body{
+    font-family: cambria, garamond, arial;
+    background-color:rgb(187, 187, 248);
+    color: white;
+    text-shadow: 1px 1px black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:768px){
+    header{
+        height: 30px;
+        font-size: 10px;
+    }
+
+    button{
+        display: none;
+    }
+
+}
+
+header{
+    height: 80px;
+    display: block;
+}
+
+.mainimage{
+    display: block;
+    height: 500px;
+    width: 700px;
+    position: relative;
+    top: 0px;
+}
+
+.closebtn{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 35px;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    background-color:black;
+    height: 500px;
+    width: 700px;
+    top: 108px;
+    display:none;
+}
+
+button{
+    border: 0;
+    border-radius: 4px;
+    background-color:rgb(250, 202, 225);
+    cursor: pointer;
+    font-family: cambria;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(241, 113, 134);
+    border-right: 2px solid rgb(241, 113, 134);
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+button:hover{
+    background-color:rgb(80, 80, 80);
+    border: none;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;      
+}
+
+.gallery img{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.gallery img:hover{
+    filter: contrast(120%);
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+#imgText{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}

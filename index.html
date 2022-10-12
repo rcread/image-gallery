@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>image gallery project</h1>
+    </header>
+
+    <div class="gallery" id="gallery">
+        <div class="smallimage">
+            <img class="smallimage" src="img/beach.jpg" alt="Beach" onclick="changeImage(this);">
+        </div>
+        <div class="smallimage">
+            <img class="smallimage" src="img/city.jpg" alt="City" onclick="changeImage(this);">
+        </div>
+        <div class="smallimage">
+            <img class="smallimage" src="img/island.jpg" alt="Island" onclick="changeImage(this);">
+        </div>
+        <div class="smallimage">
+            <img class="smallimage" src="img/mountain.jpg" alt="Mountain" onclick="changeImage(this);">
+        </div>
+        <div class="smallimage">
+            <img class="smallimage" src="img/sunset.jpg" alt="Sunset" onclick="changeImage(this);">
+        </div>
+
+    </div>
+
+    <div class="mainimage" id="mainImage">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="display" style="height:500px; width: 700px;" >
+        <div class="image-text" id="imgText"></div>
+    </div>
+    <div class="overlay">
+    </div>
+    <button class="dark">darken</button>
+
+    <script src="main.js"></script>
+
+    <footer></footer>
+
+</body>
+
+</html>
