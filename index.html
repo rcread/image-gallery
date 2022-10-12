@@ -13,6 +13,8 @@
         <h1>image gallery project</h1>
     </header>
 
+    <div class="choose">select image to view</div>
+
     <div class="gallery" id="gallery">
         <div class="smallimage">
             <img class="smallimage" src="beach.jpg" alt="Beach" onclick="changeImage(this);">
@@ -34,7 +36,7 @@
 
     <div class="mainimage" id="mainImage">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="display" style="height:500px; width: 700px;" >
+        <img id="display">
         <div class="image-text" id="imgText"></div>
     </div>
     <div class="overlay">
