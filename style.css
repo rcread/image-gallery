@@ -9,18 +9,6 @@ body{
     flex-direction: column;
 }
 
-@media (max-width:768px){
-    header{
-        height: 30px;
-        font-size: 10px;
-    }
-
-    button{
-        display: none;
-    }
-
-}
-
 header{
     height: 80px;
     display: block;
@@ -32,6 +20,11 @@ header{
     width: 700px;
     position: relative;
     top: 0px;
+}
+
+.mainimage img{
+    height: 500px;
+    width: 700px;
 }
 
 .closebtn{
@@ -101,4 +94,53 @@ button:hover{
     left: 15px;
     color: white;
     font-size: 20px;
+}
+
+.choose{
+    padding-top: 20px;
+}
+
+@media(min-width:768px){
+    .choose{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    body{
+        align-items: center;
+    }
+
+    header{
+        height: 30px;
+        font-size: 10px;
+    }
+
+    button{
+        display: none;
+    }
+
+    .mainimage{
+        height: 270px;
+        width: 350px;
+    }
+
+    .mainimage img{
+        height: 270px;
+        width: 350px;
+    }
+
+    .smallimage{
+        height: 60px;
+        width:120px;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+    .gallery{
+        display: flex;
+        justify-content: center;
+        top: 0px;
+    }
+
 }
